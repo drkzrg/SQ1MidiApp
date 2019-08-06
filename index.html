@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MidiApp</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="midiapp.css">
+</head>
+<body>
+<div class="main">
+		<!-- Outputdeviceconf   -->
+		<div id="ouputdeviceconf" class="panel panel-default">
+				<select  class="form-control" name="outputportselector" id="outputportselector">
+				</select>
+				<input type="button" id="chooseOutputDevice" class="btn btn-default" value="Connect">
+		</div>
+
+		<div id="sequencer">
+			<div class="left_block">
+				<div class="seqcontrols">
+					<button class="btn " id="play"><i class="fa fa-play"></i>/<i class="fa-stop fa"></i></button>
+				</div>
+				<div class="genconf">
+					<label for="tempo">tempo</label>
+					<input type="range" name="tempo" id="tempo" min="20" max="270" value="120">
+				</div>
+			</div>
+			<div class="right_block">
+
+
+				<div class="steps">
+					<button id="step_1" class="btn step_btn"></button>
+					<button  id="step_2" class="btn step_btn"></button>
+					<button id="step_3" class="btn step_btn"></button>
+					<button  id="step_4" class="btn step_btn"></button>
+					<button  id="step_5" class="btn step_btn"></button>
+					<button  id="step_6" class="btn step_btn"></button>
+					<button  id="step_7" class="btn step_btn"></button>
+					<button  id="step_8" class="btn step_btn"></button>
+				</div>
+
+
+                        		<div class="knobs">
+						<input type="text" id="knob_1" class="knob" value=0>
+						<input type="text" id="knob_2" class="knob" value=0>
+						<input type="text" id="knob_3" class="knob" value=0>
+						<input type="text" id="knob_4" class="knob" value=0>
+						<input type="text" id="knob_5" class="knob" value=0>
+						<input type="text" id="knob_6" class="knob" value=0>
+						<input type="text" id="knob_7" class="knob" value=0>
+						<input type="text" id="knob_8" class="knob" value=0>
+					</div>
+					<div class="leds">
+					<div class="led_wrapper">
+						<div id="LED_1" class="led"></div>
+					</div>
+					<div class="led_wrapper">
+						<div id="LED_2" class="led"></div>
+					</div>
+					<div class="led_wrapper">
+						<div id="LED_3" class="led"></div>
+					</div>
+					<div class="led_wrapper">
+						<div id="LED_4" class="led"></div>
+					</div>
+					<div class="led_wrapper">
+						<div id="LED_5" class="led"></div>
+					</div>
+					<div class="led_wrapper">
+						<div id="LED_6" class="led"></div>
+					</div>
+					<div class="led_wrapper">
+						<div id="LED_7" class="led"></div>
+					</div>
+					<div class="led_wrapper">
+						<div id="LED_8" class="led"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+<script src="./jQuery-Knob-master/js/jquery.knob.js"></script>
+<script src="webmidisequencer.js"></script>
+<script>
+	var SqSequencer = new SqSequencer({'autoplay':false});
+	SqSequencer.load();
+</script>
+<script src="midiapp.js"></script>
+</html>
+

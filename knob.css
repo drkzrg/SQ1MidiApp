@@ -1,0 +1,55 @@
+#container{
+    width: 1000px;
+    height: 500px;
+    margin: 0px auto;
+    border: 1px solid #DDD;
+    margin-top: 100px;
+    position: relative;
+
+}
+
+li{
+    list-style-type: none;
+    float: left;
+    margin-left:35px;
+}
+
+.knobi:hover,
+.toni:hover{
+    stroke:#777;
+    transition: 0.5s stroke;
+    cursor: pointer;
+
+}
+
+.knwrapper{
+    position: relative;
+    width: 100%;
+    width: 1000px;
+    height:100px;
+
+}
+
+.knobiinput{
+    display: none;
+    width: 54px;
+    height: 33px;
+    border: 1px solid #CCC;
+    z-index: 1000000;
+    vertical-align: middle;
+    background: none;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    font-size: 20px;
+    line-height: normal;
+    font-family: Arial;
+    text-align: center;
+    color: rgb(149, 165, 166);
+    padding: 0px;
+    -webkit-appearance: none;
+    transition: all 2s;
+}
+
+

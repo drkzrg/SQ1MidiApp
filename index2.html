@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MyMidiApp</title
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="midiapp.css">
+</head>
+<body>
+<div class="main">
+
+		<!-- Outputdeviceconf   -->
+		<div id="ouputdeviceconf" class="panel panel-default">
+			Configuration
+			<p>Output device Connexion :</p>
+				<label for="outputportselector">Outputs</label>
+				<select  class="form-control" name="outputportselector" id="outputportselector">
+				</select>
+				<input type="button" id="chooseOutputDevice" class="btn btn-default" value="connect">
+		</div>
+
+		<div class="sequencer">
+			<div class="steps">
+				<input  class="step_range" type="range" name="" min="0" max="128" step="1" value="60">
+				<input  class="step_range" type="range" name="" min="0" max="128" step="1" value="60">
+				<input class="step_range"  type="range" name="" min="0" max="128" step="1" value="60">
+				<input  class="step_range" type="range" name="" min="0" max="128" step="1" value="60">
+				<input  class="step_range" type="range" name="" min="0" max="128" step="1" value="60">
+				<input  class="step_range" type="range" name="" min="0" max="128" step="1" value="60">
+				<input  class="step_range" type="range" name="" min="0" max="128" step="1" value="60">
+				<input  class="step_range" type="range" name="" min="0" max="128" step="1" value="60">
+			</div>
+			<div class="seqcontrols">
+				<input type="button" value="play" id="play"/>
+				<input type="button" value="stop" id="stop"/>
+			</div>
+		</div>
+
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+<script src="midiapp.js"></script> 
+
+</html>

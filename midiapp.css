@@ -1,0 +1,244 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family  :Arial;
+}
+#ouputdeviceconf{
+  margin-bottom: 20px;
+}
+button:focus{
+	outline: none;
+}
+select {
+  /*background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");*/
+  background-color:#3498DB;
+  background-repeat:no-repeat;
+  background-position: right 10px top 15px;
+  background-size: 16px 16px;
+  color:white;
+  padding:12px;
+  width:auto;
+  font-family:arial,tahoma;
+  font-size:14px;
+  /*font-weight:bold;*/
+  color:#fff;
+  text-align:center;
+  /*text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);*/
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -webkit-appearance: none;
+  border:0;
+  outline:0;
+  -webkit-transition:0.2s ease all;
+       -moz-transition:0.2s ease all;
+        -ms-transition:0.2s ease all;
+         -o-transition:0.2s ease all;
+            transition:0.2s ease all;
+}
+
+select:hover{
+   background-color: #4aa3df;
+}
+
+ #sequencer{
+ 	/*display: none;*/
+ }
+
+
+#sequencer{
+	width: 892px;
+	height: 350px;
+	margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid #bdc3c7;
+    padding: 20px;
+    color:#ffffff;
+}
+
+.seqcontrols .btn{
+    color: white;
+}
+
+.fa-stop{margin-left: 3px;}
+.fa-play{margin-right: 3px;}
+
+.steps{
+    margin: 50px 0 25px 5px;
+}
+
+#play{
+    width:60px;
+}
+/**Bouton*/
+.btn{
+
+    height: 30px;
+    border-radius: 5px;
+    background-color: #bdc3c7;
+    color:#fff;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    border:1px solid transparent;
+}
+
+.btn:hover{
+    background-color: #cbd0d3;
+}
+.btn.active{
+    background-color: #E74C3C;
+}
+.btn.active:hover {
+    background-color: #ea6153;
+}
+
+.step_btn{
+	margin:0 23px;
+    width: 60px;
+}
+
+.right_block{
+    float:left;
+    position:relative;
+}
+
+.left_block{
+      margin-top: 25px;
+    /*width:30%;*/
+    /*float: left;*/
+}
+.seqcontrols, .genconf{
+    float: left;
+
+}
+.seqcontrols{
+    margin-left: 25px;
+}
+
+
+.knobs{
+  margin: 20px 0;
+    height: 100px;
+}
+.knob {
+    background-color: #95a5a6;
+    transition: all 0.2s ease-out;
+    width: 100px;
+    height:100px;
+    border-radius : 100px;
+}
+.micro-dial{
+    width:15px;
+    height:15px;
+    border-radius: 15px;
+    background-color:#fff;
+    position: relative;
+    left: 42px;
+    top: 8px;
+
+}
+
+.knob_wrapper{
+    float:left;
+    display: inline-block;
+    width: 100px;
+    margin-left: 10px;
+    position:relative;
+}
+
+.knob_wrapper input{
+    display: inline-block;
+    width: 24px;
+    position: absolute;
+    z-index: 10;
+    top: 46%;
+    color:white;
+     left: 35%;
+     font-weight: bold;
+    background-color:transparent;
+    border-color:transparent;
+}
+
+
+.knob:hover{
+background-color:#a3b1b2;
+
+}
+
+.knoblabel{
+  color: #fff;
+    position: absolute;
+    left: 36%;
+    top: 45%;
+    z-index: 10;
+    display: none;
+}
+
+.knobs div{
+  margin-left: 6px;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #bdc3c7;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #f39c12;
+    margin-top: -4px;
+}
+input[type=range]::-webkit-slider-thumb:hover{
+    background-color: #f4a62;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+
+}
+.leds{
+  position: absolute;
+  top:230px;
+}
+
+.led{
+  width:30px;
+  height:10px;
+  border-radius: 10px;
+  float:left;
+  border: solid 1px #ECF0F1;
+  /*visibility: hidden;*/
+}
+
+.led_wrapper{
+    width: 67px;
+    float: left;
+    margin-left: 43px;
+}
+
+.knobs{
+    height! 100px;
+}
+
+.knob{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  .transform(rotate(0deg));
+  z-index: 10;
+}
